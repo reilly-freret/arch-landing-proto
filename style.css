@@ -117,3 +117,7 @@ a {
 .col-lg {
     margin-top: 10px;
 }
+
+.navbar-toggler {
+    color: white;
+}

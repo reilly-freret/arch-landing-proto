@@ -1,0 +1,50 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* miscellany for reuse */
+.container-center {
+    text-align: center;
+}
+
+/* main splash container elements */
+.container-fluid {
+    position: relative;
+    height: 100%;
+    background-color: black;
+    background-image: url("images/pab-60.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-fluid > .container {
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+}
+
+#big-splash-text {
+    font-weight: bold;
+    font-size: 36pt;
+}
+
+#small-splash-text {
+    font-weight: lighter;
+    font-size: 12pt;
+}
+
+#down-arrow {
+    bottom: 30px;
+}
+
+/* navbar items */
+.btn-outline-light {
+    margin-left: 10px;
+}
+
+.navbar {
+    border-bottom: 1px solid #ddd;
+}
+
+/* demo bar elements */
