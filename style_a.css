@@ -1,6 +1,5 @@
-html {
-    position: relative;
-    min-height: 100%;
+html, body {
+    height: 100%;
 }
 
 /* miscellany for reuse */
@@ -8,33 +7,50 @@ html {
     text-align: center;
 }
 
+.col {
+    text-align: center;
+}
+
+.section-header {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.section-header:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block;
+    width: 20%; /* Change this to whatever width you want. */
+    border-bottom: 2px solid #00e8f2; /* This creates the border. Replace black with whatever color you want. */
+}
+
 /* main splash container elements */
-.container-fluid {
-    position: relative;
-    height: 100%;
+.col-splash {
     background-color: black;
     background-image: url("images/pab-60.png");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.container-fluid > .container {
+.row-main {
     text-align: center;
-    color: white;
     margin-top: 15%;
 }
 
 #big-splash-text {
     font-weight: bold;
+    color: white;
     font-size: 36pt;
 }
 
 #small-splash-text {
     font-weight: lighter;
+    color: white;
     font-size: 12pt;
 }
 
-#down-arrow {
+.row-bottom {
+    position: absolute;
+    width: 100%;
     bottom: 30px;
 }
 
@@ -48,3 +64,23 @@ html {
 }
 
 /* demo bar elements */
+#simulator-row {
+    margin-top: 20px;
+}
+
+#simulator-row img {
+    width: 100%;
+}
+
+.simulator-section {
+    text-align: center;
+}
+
+.sim-description {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.simulator-section .far, .simulator-section .fas {
+    color: #00e8f2;
+}
