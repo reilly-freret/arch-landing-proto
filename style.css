@@ -87,6 +87,11 @@ html, body {
     font-weight: bold;
 }
 
+.row-bottom .btn:hover {
+    background-color: #00bde7;
+    border-color: #00bde7;
+}
+
 /* navbar items */
 path {
     fill: white;
@@ -122,6 +127,12 @@ path.scrolled {
 .btn-outline-light.scrolled {
     border-color: var(--arch-teal);
     background-color: var(--arch-teal);
+}
+
+.btn-outline-light.scrolled:hover {
+    border-color: #00bde7;
+    background-color: #00bde7;
+    color: white;
 }
 
 .nav-link {
@@ -215,6 +226,10 @@ path.scrolled {
 }
 
 /* sponsor bar elements */
+#partners-header {
+    margin-top: 30px;
+}
+
 .horizontal-scroll {
     overflow-x: auto;
     white-space: nowrap;
