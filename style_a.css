@@ -59,7 +59,11 @@ html, body {
 .row-bottom {
     position: absolute;
     width: 100%;
-    bottom: 30px;
+    bottom: 100px;
+}
+
+.row-bottom .btn {
+    border-radius: 30px;
 }
 
 /* navbar items */
@@ -67,8 +71,33 @@ html, body {
     margin-left: 10px;
 }
 
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
 .navbar {
     border-bottom: 1px solid #ddd;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: white;
+}
+
+.nav-link.scrolled {
+    color: #444;
+}
+
+.btn-outline-light.scrolled {
+    border-color: #00e8f2;
+    background-color: #00e8f2;
 }
 
 /* demo bar elements */
