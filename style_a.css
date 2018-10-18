@@ -3,6 +3,10 @@ html, body {
     background-color: #fefefe;
 }
 
+:root {
+    --arch-teal: #00D0FE;
+}
+
 .nav {
     color: white;
 }
@@ -24,8 +28,8 @@ html, body {
 .section-header:after {
     content: "";
     display: block;
-    width: 20%;
-    border-bottom: 2px solid #00e8f2;
+    width: 100px;
+    border-bottom: 2px solid var(--arch-teal);
 }
 
 /* main splash container elements */
@@ -38,10 +42,17 @@ html, body {
 }
 
 .row-main {
+    position: relative;
     text-align: center;
-    max-height: 70%;
-    display: flex;
-    align-items: center;
+    margin-top: 150px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.row-main.expanded {
+    margin-top: 200px;
 }
 
 #big-splash-text {
@@ -59,24 +70,68 @@ html, body {
 .row-bottom {
     position: absolute;
     width: 100%;
-    bottom: 100px;
+    bottom: 200px;
 }
 
 .row-bottom .btn {
-    border-radius: 30px;
+    border-radius: 35px;
+    color: white;
+    border-color: var(--arch-teal);
+    background-color: var(--arch-teal);
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 /* navbar items */
+path {
+    fill: white;
+    stroke: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+path.scrolled {
+    fill: #444;
+    stroke: #444;
+}
+
+.navbar-brand:hover path.scrolled {
+    fill: var(--arch-teal);
+    stroke: var(--arch-teal);
+}
+
+.nav-item > a:hover {
+    color: var(--arch-teal);
+}
+
 .btn-outline-light {
     margin-left: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light.scrolled {
+    border-color: var(--arch-teal);
+    background-color: var(--arch-teal);
 }
 
 .nav-link {
     color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.navbar-toggler {
-    color: white;
+.nav-link.scrolled {
+    color: #444;
 }
 
 .navbar {
@@ -91,13 +146,16 @@ html, body {
     background-color: white;
 }
 
-.nav-link.scrolled {
-    color: #444;
+.navbar-toggler {
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.btn-outline-light.scrolled {
-    border-color: #00e8f2;
-    background-color: #00e8f2;
+.navbar-toggler.scrolled {
+    color: var(--arch-teal);
 }
 
 /* demo bar elements */
@@ -119,17 +177,32 @@ html, body {
 }
 
 #simulator-row .far, #simulator-row .fas {
-    color: #00e8f2;
+    color: var(--arch-teal);
+}
+
+/* demo carousel elements */
+.carousel-item img {
+    max-height: 500px;
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    margin: auto
+}
+
+.carousel {
+    max-width: 400px;
+    margin: auto;
 }
 
 /* sponsor bar elements */
+
 .horizontal-scroll {
     overflow-x: auto;
     white-space: nowrap;
     flex-wrap: nowrap;
 }
 
-.horizontal-scroll > .col-3 {
+.horizontal-scroll>.col-3 {
     display: inline-block;
     float: none;
 }
@@ -166,7 +239,7 @@ html, body {
     height: 70px;
 }
 
-.custom-card-img > img {
+.custom-card-img>img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -184,21 +257,10 @@ html, body {
     color: black;
 }
 
-/* sponsor carousel elements */
-.carousel-item img {
-    max-height: 400px;
-    max-width: 200px;
-    width: auto;
-    height: auto;
-    margin: auto
-}
 
-.carousel {
-    max-width: 270px;
-    margin: auto;
-}
 
 /* footer row elements */
+
 #footer-row {
     height: 60px;
     line-height: 60px;
