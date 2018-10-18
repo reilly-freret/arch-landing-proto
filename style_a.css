@@ -3,12 +3,16 @@ html, body {
     background-color: #fefefe;
 }
 
+.nav {
+    color: white;
+}
+
 /* miscellany for reuse */
 .container-center {
     text-align: center;
 }
 
-.col {
+#down-arrow {
     text-align: center;
 }
 
@@ -18,15 +22,16 @@ html, body {
 }
 
 .section-header:after {
-    content: ""; /* This is necessary for the pseudo element to work. */
+    content: "";
     display: block;
-    width: 20%; /* Change this to whatever width you want. */
-    border-bottom: 2px solid #00e8f2; /* This creates the border. Replace black with whatever color you want. */
+    width: 20%;
+    border-bottom: 2px solid #00e8f2;
 }
 
 /* main splash container elements */
 .col-splash {
     background-color: black;
+    background-size: cover;
     background-image: url("images/pab-60.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +39,9 @@ html, body {
 
 .row-main {
     text-align: center;
-    margin-top: 15%;
+    max-height: 70%;
+    display: flex;
+    align-items: center;
 }
 
 #big-splash-text {
@@ -82,7 +89,7 @@ html, body {
     text-align: left;
 }
 
-.simulator-section .far, .simulator-section .fas {
+#simulator-row .far, #simulator-row .fas {
     color: #00e8f2;
 }
 
