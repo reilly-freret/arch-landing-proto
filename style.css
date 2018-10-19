@@ -4,7 +4,16 @@ html, body {
 }
 
 :root {
+    /* blue that I like */
     --arch-teal: #00D0FE;
+
+    /* purple */
+    /* --arch-teal: #9B59B6; */
+
+    /* red */
+    /* --arch-teal: #E74C3C; */
+
+    /* actual arch teal */
     /* --arch-teal: #00e8f2; */
 }
 
@@ -37,7 +46,7 @@ html, body {
 .col-splash {
     background-color: black;
     background-size: cover;
-    background-image: url("images/pab-60.png");
+    background-image: url("images/pab-50.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -59,37 +68,38 @@ html, body {
 #big-splash-text {
     font-weight: bold;
     color: white;
-    font-size: 36pt;
+    font-size: 40pt;
 }
 
 #small-splash-text {
-    font-weight: lighter;
+    font-weight: 200;
     color: white;
-    font-size: 12pt;
+    font-size: 16pt;
 }
 
 .row-bottom {
-    /* position: absolute;
-    width: 100%;
-    bottom: 200px; */
     margin-top: 90px;
 }
 
 .row-bottom .btn {
     border-radius: 35px;
     color: white;
-    border-color: var(--arch-teal);
-    background-color: var(--arch-teal);
+    border-width: 0;
+    background-image: linear-gradient(0deg, var(--arch-teal), var(--arch-teal));
     text-align: center;
     width: 200px;
     height: 70px;
     font-size: 14pt;
     font-weight: bold;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .row-bottom .btn:hover {
-    background-color: #00bde7;
-    border-color: #00bde7;
+    background-blend-mode: multiply;
+    background-color: rgba(1, 1, 1, .2);
 }
 
 /* navbar items */
@@ -118,6 +128,7 @@ path.scrolled {
 
 .btn-outline-light {
     margin-left: 10px;
+    color: white;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -125,14 +136,15 @@ path.scrolled {
 }
 
 .btn-outline-light.scrolled {
+    border-width: 0;
+    color: white;
     border-color: var(--arch-teal);
-    background-color: var(--arch-teal);
+    background-image: linear-gradient(0deg, var(--arch-teal), var(--arch-teal));
 }
 
 .btn-outline-light.scrolled:hover {
-    border-color: #00bde7;
-    background-color: #00bde7;
-    color: white;
+    background-blend-mode: multiply;
+    background-color: rgba(1, 1, 1, .2);
 }
 
 .nav-link {
@@ -259,12 +271,17 @@ path.scrolled {
     vertical-align: middle;
 }
 
-#sponsor-row {
-    margin-top: 20px;
+.sponsor-row {
+    /* margin-top: 30px; */
+}
+
+#last-sponsor-row {
+    margin-bottom: 30px;
 }
 
 .card {
     height: 100px;
+    margin-top: 30px;
 }
 
 .custom-card-img {
