@@ -46,7 +46,7 @@ html, body {
 .col-splash {
     background-color: black;
     background-size: cover;
-    background-image: url("images/pab-50.png");
+    background-image: url("images/pab-50-crop.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -54,7 +54,7 @@ html, body {
 .row-main {
     position: relative;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
