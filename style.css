@@ -37,7 +37,7 @@ html, body {
 
 .section-header:after {
     content: "";
-    display: block;
+    display: inline;
     width: 100px;
     border-bottom: 2px solid var(--arch-teal);
 }
